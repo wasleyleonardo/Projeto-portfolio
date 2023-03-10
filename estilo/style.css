@@ -1,0 +1,346 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #54b7f0;
+    --cor2: #4a5cf7;
+    --cor3: #4179d9;
+    --cor4: #41cad9;
+    --cor5: #4af7da;
+
+    --font01: "Kanit", arial, sans-serif;
+    --font02: "Urbanist", arial, sans-serif;
+
+}
+
+h2 {
+    color: var(--cor5);
+    background-image: linear-gradient(to left, white, var(--cor2));
+    font-family: var(--font01);
+    text-indent: 10px;
+}
+
+p, li {
+    text-align: justify;
+    text-indent: 20px;
+    font-family: var(--font02);
+    font-size: 1.4em;
+    line-height: 1.5em;
+    margin-top: 15px;
+}
+
+/*estilo do cabeçalho*/
+header {
+    background-color: var(--cor2);
+    padding: 30px 0px;
+}
+
+header > h1 {
+    font-family: var(--font01);
+    font-weight: 600;
+    text-align: center;
+    font-size: 2.5em;
+    color: var(--cor5);
+}
+
+header > p {
+    font-family: var(--font02);
+    font-size: 1.4em;
+    text-align: center;
+    padding: 5px 0px;
+    color: white;
+    margin: 0px;
+}
+
+/*estilo do menu*/
+nav {
+    background-color: var(--cor3);
+    text-align: right;
+    padding: 10px 0px;
+}
+
+nav > a > p {
+    display: inline;
+    margin-right: 18px;
+}
+
+nav > a {
+    text-decoration: none;
+    color: white;
+}
+
+nav > a > P:hover {
+    color: var(--cor5);
+    text-decoration: underline;
+}
+
+/*estilo do conteúdo*/
+main {
+    margin: auto;
+    padding: 25px 10px 0px 10px;
+    background-color: white;
+
+    min-width: 300px;
+    max-width: 800px;
+}
+
+main > img {
+    display: block;
+    width: 270px;
+    margin: auto;
+}
+
+.apresentacao {
+    margin-top: 30px;
+}
+
+.proposta {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.proposta > img {
+    width: 32%;
+    height: 290px;
+    display: inline;
+    position: absolute;
+    top: 25%;
+}
+
+@media(max-width: 500px) {
+    .proposta > img {
+        display: none;
+    }
+}
+.proposta > P, ul {
+    margin-left: 40%;
+}
+
+@media(max-width: 500px){
+    .proposta > p, ul{
+        margin: auto;
+    }
+}
+
+.projetos {
+    height: 420px;
+    position: relative;
+}
+
+.projetos > a {
+    display: block;
+    width: 30%;
+    height: 240px;
+    background-color: var(--cor1);
+    border-top-left-radius: 80px;
+    box-shadow: 3px 2px 4px rgba(0,0,0,0.4);
+}
+
+.projeto-01 {
+    margin: 10% 0% 0% 20%;
+    background-image: url('../imagens/img-projeto-01.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projeto-02 {
+    position: absolute;
+    left: 53%;
+    transform: translate(0%, -100%);
+    background-image: url('../imagens/img-projeto-02.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width: 600px) {
+    .projetos {
+        height: 640px;
+    }
+    
+    .projetos > a {
+        width: 50%;
+    }
+    
+    .projeto-01 {
+        margin: 10% 0% 0% 26%;
+    }
+    
+    .projeto-02 {
+        left: 26%;
+        transform: translate(0%, 18%);
+    }
+}
+
+.tecnologias {
+    height: 515px;
+    position: relative;
+}
+
+.tecnologias > p {
+    position: absolute;
+    top: 450px;
+}
+
+.tecnologias > div {
+    background-color: var(--cor4);
+    width: 120px;
+    height: 70px;
+    border-radius: 30px 0px 0px 58px;
+    box-shadow: 3px 3px 5px rgba(0,0,0,0.4);
+    padding: 35px 0px 0px 25px;
+    margin: 85px 0px 0px 10%;
+}
+
+.css {
+    position: absolute;
+    left: 22%;
+    top: 36%;
+    margin: 0px;
+}
+
+.git {
+    position: absolute;
+    left: 42%;
+    transform: translate(0px, -186px);
+    margin-left: 0px;
+}
+
+.github {
+    position: absolute;
+    left: 63%;
+    top: 36%;
+    margin: 0px;
+}
+
+/* adaptação da tela aos 630px. */
+@media(max-width: 630px) {
+    .tecnologias > div{
+        margin-left: 13%;
+    }
+    
+    .css {
+        left: 0%;
+        top: 36%;
+    }
+    
+    .git{
+        top: 43%;
+    }
+
+    .github {
+        left: 42%;
+    }
+}
+
+/* adaptação da tela aos 390px. */
+@media(max-width: 390px){
+    .tecnologias{
+        height: 660px;
+    }
+    
+    .tecnologias > p{
+        top: 606px;
+    }
+    
+    .tecnologias > div{
+        margin: 5% 0% 0% 28%;
+    }
+    
+    .css{
+        top: 31%;
+        left: 0%;
+        margin-top: 0%;
+    }
+    
+    .git{
+        top: 79%;
+        left: 1%;
+        margin-top: 0%;
+    }
+    
+    .github{
+        top: 71%;
+        left: 2%;
+        margin-top: 0%;
+    }
+}
+
+.tecnologias > div > p {
+    margin: auto;
+    color: white;
+    font-size: 1.5em;
+    font-weight: bolder;
+}
+
+.contato > p {
+    margin-bottom: 30px;
+}
+
+.contato > a > button {
+    display: block;
+    width: 250px;
+    height: 80px;
+    margin: auto;
+    border-radius: 25px;
+    background-color: var(--cor3);
+    font-family: var(--font01);
+    color: white;
+    font-size: 1.6em;
+    font-weight: 600;
+}
+
+.contato > a {
+    text-decoration: none;
+}
+
+.contato > a > button:hover {
+    color: var(--cor5);
+}
+
+#icones-juntos{
+    margin: auto;
+    width: 130px;
+    margin-top: 6px;
+}
+
+.a-2, .a-3{
+    display: inline-block;
+}
+
+.a-2{
+    margin-left: 29px;
+}
+
+.a-3{
+    margin-left: 15px;
+}
+
+.icone1 { /* a class da imagem 1 */
+    min-width: 30px;
+    height: 30px;
+}
+
+.icone2 { /* a class da imagem 2 */
+    min-width: 30px;
+    height: 30px;
+    border-radius: 50px;
+}
+
+/*estilo do rodapé*/
+footer {
+    background-color: black;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+}
