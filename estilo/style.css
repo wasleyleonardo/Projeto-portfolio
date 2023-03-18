@@ -113,7 +113,7 @@ main > img {
     height: 290px;
     display: inline;
     position: absolute;
-    top: 25%;
+    top: 28%;
 }
 
 @media(max-width: 500px) {
@@ -129,10 +129,18 @@ main > img {
     .proposta > p, ul{
         margin: auto;
     }
+
+    .proposta > h2 {
+        margin-bottom: 15px;
+    }
+
+    .proposta > #paragrafo {
+        margin: 10px 0px;
+    }
 }
 
 .projetos {
-    height: 420px;
+    height: 450px;
     position: relative;
 }
 
@@ -163,7 +171,7 @@ main > img {
 
 @media(max-width: 600px) {
     .projetos {
-        height: 640px;
+        height: 760px;
     }
     
     .projetos > a {
@@ -309,7 +317,7 @@ main > img {
 #icones-juntos{
     margin: auto;
     width: 130px;
-    margin-top: 6px;
+    margin-top: 15px;
 }
 
 .a-2, .a-3{
