@@ -116,17 +116,18 @@ main > img {
     top: 28%;
 }
 
-@media(max-width: 500px) {
-    .proposta > img {
-        display: none;
-    }
-}
 .proposta > P, ul {
     margin-left: 40%;
 }
 
+/*adaptação da tela para 500px*/
 @media(max-width: 500px){
-    .proposta > p, ul{
+
+    .proposta > img {
+        display: none;
+    }
+
+    .proposta > p, ul {
         margin: auto;
     }
 
@@ -351,4 +352,5 @@ footer {
 footer > p {
     color: white;
     text-align: center;
+    font-size: 1em;
 }
